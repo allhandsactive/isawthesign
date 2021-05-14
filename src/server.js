@@ -63,4 +63,6 @@ module.exports = (log, authControllerToken, authStaffToken) => {
       res.sendStatus(204);
     },
   );
+
+  return app;
 };

@@ -1,4 +1,4 @@
-FROM node:14.17.0
+FROM node:16.1.0
 
 ENV NODE_ENV="production"
 ENV SIGN_HOST="0.0.0.0"

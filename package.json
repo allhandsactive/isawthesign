@@ -1,0 +1,49 @@
+{
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "dotenv": "^9.0.2",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.0",
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0",
+    "supertest": "^6.1.3"
+  },
+  "scripts": {
+    "build": "scripts/build.sh",
+    "lint:fix": "(npm run lint:fix:eslint || true) && npm run lint:fix:prettier",
+    "lint:fix:eslint": "eslint --fix .",
+    "lint:fix:prettier": "prettier --write .",
+    "production": "node index.js",
+    "start": "nodemon -r dotenv/config index.js",
+    "test": "npm run test:lint && npm run test:server",
+    "test:lint": "npm run test:lint:prettier && npm run test:lint:eslint",
+    "test:lint:eslint": "eslint .",
+    "test:lint:prettier": "prettier --check .",
+    "test:server": "mocha"
+  },
+  "name": "isawthesign",
+  "description": "Simple API for the open sign controller",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allhandsactive/isawthesign.git"
+  },
+  "author": "James Kruth",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/allhandsactive/isawthesign/issues"
+  },
+  "homepage": "https://github.com/allhandsactive/isawthesign#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "express-winston": "^4.1.0",
+    "helmet": "^4.6.0",
+    "nocache": "^2.1.0",
+    "winston": "^3.3.3"
+  }
+}

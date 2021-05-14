@@ -26,6 +26,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm test
+
   build:
     needs: test
     if: github.ref == 'refs/heads/main'
@@ -36,3 +37,5 @@ jobs:
 
       - name: Build and push the image
         run: scripts/build.sh
+        env:
+          DOCKER_PASS: ${{ secrets.DOCKER_PASS }}

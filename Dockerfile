@@ -1,4 +1,4 @@
-FROM node:16.7.0-alpine
+FROM node:17.5.0-alpine
 
 ENV NODE_ENV="production"
 ENV SIGN_HOST="0.0.0.0"

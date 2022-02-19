@@ -40,7 +40,7 @@
   "homepage": "https://github.com/allhandsactive/isawthesign#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-basic-auth": "^1.2.0",
+    "express-basic-auth": "^1.2.1",
     "express-winston": "^4.2.0",
     "helmet": "^4.6.0",
     "nocache": "^3.0.1",

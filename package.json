@@ -43,7 +43,7 @@
     "express-basic-auth": "^1.2.1",
     "express-winston": "^4.2.0",
     "helmet": "^5.0.2",
-    "nocache": "^3.0.1",
+    "nocache": "^3.0.3",
     "winston": "^3.6.0"
   }
 }
